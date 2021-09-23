@@ -29,14 +29,7 @@ int main(){
 	}else if(friend_sex=='f'){
 		letter+="If you see "+friend_name+" please ask her to call me.\n";
 	}else{
-		while(friend_sex!='m' || friend_sex!='f'){
-			cout << "Is your friend male or female? (m/f)" << endl;
-			cin >> friend_sex;
-			if(friend_sex=='m')
-				break;
-			else if(friend_sex=='f')
-				break;
-		}
+		letter+="If you see "+friend_name+" please ask him/her to call me.\n";
 	}
 	
 	int age;
